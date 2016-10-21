@@ -1,0 +1,27 @@
+entity Player {
+	name String,
+    threePointsMade Double,
+    threePointsPct Double,
+    assists Double,
+    blocks Double,
+    freeThrowMade Double,
+    freeThrowPct Double,
+    fieldGoalsPct Double,
+    gamesPlayed Integer,
+    minutes Double,
+    points Double,
+    rebounds Double,
+    steals Double,
+    turnovers Double,
+    value Double,
+    hasBoth Boolean
+    
+    
+}
+
+// Set pagination options
+paginate Player with infinite-scroll
+
+ 
+
+// Set service options to all except few

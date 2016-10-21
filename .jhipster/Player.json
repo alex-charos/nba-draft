@@ -1,0 +1,88 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "threePointsMade",
+            "fieldType": "Double"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "threePointsPct",
+            "fieldType": "Double"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "assists",
+            "fieldType": "Double"
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "blocks",
+            "fieldType": "Double"
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "freeThrowMade",
+            "fieldType": "Double"
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "freeThrowPct",
+            "fieldType": "Double"
+        },
+        {
+            "fieldId": 8,
+            "fieldName": "fieldGoalsPct",
+            "fieldType": "Double"
+        },
+        {
+            "fieldId": 9,
+            "fieldName": "gamesPlayed",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 10,
+            "fieldName": "minutes",
+            "fieldType": "Double"
+        },
+        {
+            "fieldId": 11,
+            "fieldName": "points",
+            "fieldType": "Double"
+        },
+        {
+            "fieldId": 12,
+            "fieldName": "rebounds",
+            "fieldType": "Double"
+        },
+        {
+            "fieldId": 13,
+            "fieldName": "steals",
+            "fieldType": "Double"
+        },
+        {
+            "fieldId": 14,
+            "fieldName": "turnovers",
+            "fieldType": "Double"
+        },
+        {
+            "fieldId": 15,
+            "fieldName": "value",
+            "fieldType": "Double"
+        },
+        {
+            "fieldId": 16,
+            "fieldName": "hasBoth",
+            "fieldType": "Boolean"
+        }
+    ],
+    "dto": "no",
+    "service": "no",
+    "pagination": "no"
+}

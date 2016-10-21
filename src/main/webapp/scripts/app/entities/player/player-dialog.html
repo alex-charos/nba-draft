@@ -1,0 +1,122 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myPlayerLabel">Create or edit a Player</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="player.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_name">Name</label>
+            <input type="text" class="form-control" name="name" id="field_name"
+                    ng-model="player.name"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_threePointsMade">ThreePointsMade</label>
+            <input type="number" class="form-control" name="threePointsMade" id="field_threePointsMade"
+                    ng-model="player.threePointsMade"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_threePointsPct">ThreePointsPct</label>
+            <input type="number" class="form-control" name="threePointsPct" id="field_threePointsPct"
+                    ng-model="player.threePointsPct"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_assists">Assists</label>
+            <input type="number" class="form-control" name="assists" id="field_assists"
+                    ng-model="player.assists"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_blocks">Blocks</label>
+            <input type="number" class="form-control" name="blocks" id="field_blocks"
+                    ng-model="player.blocks"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_freeThrowMade">FreeThrowMade</label>
+            <input type="number" class="form-control" name="freeThrowMade" id="field_freeThrowMade"
+                    ng-model="player.freeThrowMade"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_freeThrowPct">FreeThrowPct</label>
+            <input type="number" class="form-control" name="freeThrowPct" id="field_freeThrowPct"
+                    ng-model="player.freeThrowPct"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_fieldGoalsPct">FieldGoalsPct</label>
+            <input type="number" class="form-control" name="fieldGoalsPct" id="field_fieldGoalsPct"
+                    ng-model="player.fieldGoalsPct"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_gamesPlayed">GamesPlayed</label>
+            <input type="number" class="form-control" name="gamesPlayed" id="field_gamesPlayed"
+                    ng-model="player.gamesPlayed"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_minutes">Minutes</label>
+            <input type="number" class="form-control" name="minutes" id="field_minutes"
+                    ng-model="player.minutes"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_points">Points</label>
+            <input type="number" class="form-control" name="points" id="field_points"
+                    ng-model="player.points"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_rebounds">Rebounds</label>
+            <input type="number" class="form-control" name="rebounds" id="field_rebounds"
+                    ng-model="player.rebounds"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_steals">Steals</label>
+            <input type="number" class="form-control" name="steals" id="field_steals"
+                    ng-model="player.steals"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_turnovers">Turnovers</label>
+            <input type="number" class="form-control" name="turnovers" id="field_turnovers"
+                    ng-model="player.turnovers"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_value">Value</label>
+            <input type="number" class="form-control" name="value" id="field_value"
+                    ng-model="player.value"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_hasBoth">HasBoth</label>
+            <input type="checkbox" class="form-control" name="hasBoth" id="field_hasBoth"
+                    ng-model="player.hasBoth"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>

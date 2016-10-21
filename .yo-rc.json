@@ -1,0 +1,24 @@
+{
+  "generator-jhipster": {
+    "baseName": "nbadraft",
+    "packageName": "com.oranje",
+    "packageFolder": "com/oranje",
+    "authenticationType": "xauth",
+    "hibernateCache": "no",
+    "clusteredHttpSession": "no",
+    "websocket": "spring-websocket",
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": "no",
+    "useSass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "enableTranslation": false,
+    "enableSocialSignIn": false,
+    "rememberMeKey": "fa5881ec3fa36df86c0457d4cb42a82b97e7244a",
+    "testFrameworks": [
+      "gatling"
+    ]
+  }
+}

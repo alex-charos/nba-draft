@@ -1,0 +1,105 @@
+<div>
+    <h2>Players</h2>
+    <jh-alert></jh-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="player.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span 
+                       >Create new Player
+                    </span>
+                </button>
+            </div>
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ng-click="showTakenF()"   >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span 
+                       >Show Taken
+                    </span>
+                </button>
+            </div>
+             <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ng-click="hideTaken()"  >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span 
+                       >Hide Taken
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                     <th><span>TAKEN!</span></th>
+                    <th><span>Name</span></th>
+                    <th><span>Value</span></th>
+                    <th><span>3 M</span></th>
+                    <th><span>3 %</span></th>
+                    <th><span>Assists</span></th>
+                    <th><span>Blocks</span></th>
+                    <th><span>FT M</span></th>
+                    <th><span>FT %</span></th>
+                    <th><span>FG %</span></th>
+                    <th><span>Games</span></th>
+                    <th><span>Mins</span></th>
+                    <th><span>Pts</span></th>
+                    <th><span>Rebs</span></th>
+                    <th><span>Stl</span></th>
+                    <th><span>TOs</span></th>
+                   
+                    <th><span>Both</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="player in players track by player.id">
+                     <td> <input type="checkbox" ng-click="playerTaken(player)" ng-checked="isChecked(player)"/></td>
+                    <td><a ui-sref="player.detail({id:player.id})">{{player.name}}</a></td>
+                    <td>{{player.value}}</td>
+
+                    <td>{{player.threePointsMade}}</td>
+                    <td>{{player.threePointsPct}}</td>
+                    <td>{{player.assists}}</td>
+                    <td>{{player.blocks}}</td>
+                    <td>{{player.freeThrowMade}}</td>
+                    <td>{{player.freeThrowPct}}</td>
+                    <td>{{player.fieldGoalsPct}}</td>
+                    <td>{{player.gamesPlayed}}</td>
+                    <td>{{player.minutes}}</td>
+                    <td>{{player.points}}</td>
+                    <td>{{player.rebounds}}</td>
+                    <td>{{player.steals}}</td>
+                    <td>{{player.turnovers}}</td>
+                    
+                    <td>{{player.hasBoth}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="player.detail({id:player.id})"
+                                    class="btn btn-info btn-sm"> 
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="player.edit({id:player.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="player.delete({id:player.id})"
+                                    class="btn btn-danger btn-sm">                                    
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
